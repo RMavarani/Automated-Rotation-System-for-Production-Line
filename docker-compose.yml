@@ -1,0 +1,8 @@
+version: '1.3'
+service:
+  web:
+    build:
+      dockerfile: ./Dockerfile
+      context: .
+    ports:
+      -8000:80

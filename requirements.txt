@@ -1,0 +1,6 @@
+fastapi
+uvicorn
+fastapi-pagination
+pandas
+requests
+pulp
