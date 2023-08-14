@@ -1,0 +1,24 @@
+{
+    "shifts": ["Monday"],
+    "session": ["1","2","3"],
+    "stations": {
+      "0": {"id": 1, "name": "Station A", "session": 1},
+      "1": {"id": 2, "name": "Station B", "session": 1},
+      "2": {"id": 3, "name": "Station C", "session": 1},
+      "3": {"id": 4, "name": "Station D", "session": 1},
+      "4": {"id": 5, "name": "Station E", "session": 1},
+      "5": {"id": 6, "name": "Station F", "session": 1},
+      "6": {"id": 7, "name": "Station G", "session": 1},
+      "7": {"id": 8, "name": "Station H", "session": 1}
+    },
+    "employees": {
+      "0": {"id": 1, "name": "John", "stations": ["Station A", "Station C", "Station F"], "availability": {"1": true, "2": true, "3": true}},
+      "1": {"id": 2, "name": "Alex", "stations": ["Station B", "Station D", "Station E", "Station F"], "availability": {"1": true, "2": true, "3": true}},
+      "2": {"id": 3, "name": "Sam", "stations": ["Station C", "Station B", "Station G", "Station E"], "availability": {"1": true, "2": true, "3": true}},
+      "3": {"id": 4, "name": "Sean", "stations": ["Station E", "Station A", "Station H"], "availability": {"1": true, "2": true, "3": true}},
+      "4": {"id": 5, "name": "Tony", "stations": ["Station F", "Station E", "Station D"], "availability": {"1": true, "2": true, "3": true}},
+      "5": {"id": 6, "name": "Mark", "stations": ["Station G", "Station F", "Station B", "Station C"], "availability": {"1": true, "2": true, "3": true}},
+      "6": {"id": 7, "name": "Jeff", "stations": ["Station H", "Station G", "Station A"], "availability": {"1": true, "2": true, "3": true}},
+      "7": {"id": 8, "name": "Tom", "stations": ["Station D", "Station H", "Station C", "Station G"], "availability": {"1": true, "2": true, "3": true}}
+    }
+  }
