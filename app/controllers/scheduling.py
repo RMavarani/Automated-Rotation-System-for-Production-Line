@@ -5,5 +5,6 @@ router=APIRouter(prefix="/api/scheduling",
 
 @router.post("/")
 async def scheduling(value:dict):
-    result=Createschedule(value)
+    result= Createschedule(value)
+
     return result
