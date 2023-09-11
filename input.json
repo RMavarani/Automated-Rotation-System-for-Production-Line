@@ -9,8 +9,7 @@
     "4": {"id": 5, "name": "Station E", "capacity": 1},
     "5": {"id": 6, "name": "Station F", "capacity": 1},
     "6": {"id": 7, "name": "Station G", "capacity": 1},
-    "7": {"id": 8, "name": "Station H", "capacity": 1},
-    "8": {"id": 9, "name": ["Station H","Station G","Station F","Station E","Station D","Station C","Station B","Station A"], "capacity": 1}
+    "7": {"id": 8, "name": "Station H", "capacity": 1}
   },
   "employees": {
     "0": {"id": 1, "name": "John", "skills": ["Station A", "Station C", "Station F"], "availability": true},
@@ -21,6 +20,6 @@
     "5": {"id": 6, "name": "Mark", "skills": ["Station G", "Station F", "Station B", "Station C"], "availability": true},
     "6": {"id": 7, "name": "Jeff", "skills": ["Station H", "Station G", "Station A"], "availability": true},
     "7": {"id": 8, "name": "Tom", "skills": ["Station D", "Station H", "Station C", "Station G"], "availability": true},
-    "8": {"id": 9, "name": "faz", "skills": ["Station A", "Station E", "Station D", "Station G"], "availability": true}
+    "8": {"id": 9, "name": "Andrew", "skills": ["Station A", "Station E", "Station D", "Station G"], "availability": true}
   }
 }

@@ -68,29 +68,20 @@ def calculate_rotation_percentage(schedule, total_unique_employees):
     return rotation_percentage
 
 def Createschedule(value:dict):
-    all_schedule=[]
-    for run in range(5):
-        print(f"Run {run + 1}:")
+    schedule_data=[]
+    total_unique_employee=len(value['stations'])*len(value["session"])
+    rotation_percentage = calculate_rotation_percentage(schedule_data, total_unique_employee)
+    while rotation_percentage <= 90:
         schedule=schedule_shifts(value)
-        
-        # Extract and print the schedule as before
-        schedule_data = []
         for session, station_assignment in schedule.items():
-        
-            # print(f"Session: {session}")
             for station, employee in station_assignment.items():
                 station_name = value['stations'][station]['name']
                 schedule_data.append({'Station':station_name,'Employee':employee,'Session':session})
-        
-        all_schedule.append(schedule_data)
-        total_unique_employee=len(value['stations'])*len(value["session"])
         rotation_percentage = calculate_rotation_percentage(schedule_data, total_unique_employee)
         if rotation_percentage >= 90:
+            print(f"Date: {value['shifts']}")
             print(f'Rotation Rate: {rotation_percentage}%')
-            
-        # Convert the list of dictionaries to a DataFrame
             schedule_df = pd.DataFrame(schedule_data).pivot(index='Employee', columns='Session', values='Station')
-        
-        # Print the DataFrame
             print(schedule_df)
-    return all_schedule
+            schedule_final=schedule_df.to_json(orient='records')
+    return schedule_final
